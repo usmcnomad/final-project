@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Security Assessment Writeup Generator</title>
+    <link rel="stylesheet" href="styles/style.css"> 
+    <script src="script.js"></script>
+</head>
+<header>
+    <div id="title-bar">
+        <h1>HIPAA Security Assessment</h1>
+    </div>
+</header>
+<body>
+    <div class="div-main">
+        <span id="writeup-1-open" class="expand-div">
+            <a href="#" onclick="expandDiv()">
+                <svg height="20" width="20" style="background-color: #F0F0F0">
+                    <line x1="0" y1="0" x2="20" y2="20" style="stroke: #004F50; stroke-width: 3" />
+                    <line x1="0" y1="8" x2="12" y2="20" style="stroke: #004F50; stroke-width: 3" />
+                    <line x1="8" y1="0" x2="20" y2="12" style="stroke: #004F50; stroke-width: 3" />
+                </svg>
+            </a>
+        </span>
+        <span id="writeup-1-close" class="close-div">
+            <a href="#" onclick="closeDiv()">
+                <svg height="20" width="20" style="background-color: #F0F0F0">
+                    <line x1="0" y1="0" x2="20" y2="20" style="stroke: #004F50; stroke-width: 3" />
+                    <line x1="0" y1="20" x2="20" y2="0" style="stroke: #004F50; stroke-width: 3" />
+                </svg>
+            </a>
+        </span>
+        <div id="container-template" class="container-template">            
+            <div>
+                <p>Column 1 - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur voluptates esse expedita modi quo atque nostrum quae architecto animi, magnam, consequuntur ea, quidem molestiae sint molestias facilis eum harum temporibus.</p>
+            </div>
+            <div>
+                <p>Column 2 - - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur voluptates esse expedita modi quo atque nostrum quae architecto animi, magnam, consequuntur ea, quidem molestiae sint molestias facilis eum harum temporibus.</p>
+            </div>
+            <div>
+                <p>Column 3 - - - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur voluptates esse expedita modi quo atque nostrum quae architecto animi, magnam, consequuntur ea, quidem molestiae sint molestias facilis eum harum temporibus.</p>
+            </div>
+            <div id="generated-writeup">
+                <p>Column 4 - - - - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur voluptates esse expedita modi quo atque nostrum quae architecto animi, magnam, consequuntur ea, quidem molestiae sint molestias facilis eum harum temporibus.</p>
+            </div>
+        </div>
+        <div id= "input-form" class = "input-form">
+            <div class = "input-form-row">
+                <div class = "input-form-label">
+                    <label for=int1-title>Interviewee Title</label>
+                </div>
+                <div class = "input-form-field">
+                    <input type="text" id="int1-title" name="int1-title" placeholder="Interviewee Title">
+                </div>
+            </div>
+            <div class = "input-form-row">
+                <div class = "input-form-label">
+                    <label for=int1-name>Interviewee Name</label>
+                </div>
+                <div class = "input-form-field">
+                    <input type="text" id="int1-name" name="int1-name" placeholder="Interviewee First and Last Name">
+                </div>
+            </div>
+            <div class = "input-form-row">
+                <div class = "input-form-label">
+                    <label for=int1-notes>Interview Notes</label>
+                </div>
+                <div class = "input-form-field">
+                    <textarea id="int1-notes" name="int1-notes" placeholder="Interview notes, separated by &&"></textarea>
+                </div>
+            </div>
+            <div class = "input-form-row">
+                <div class = "input-form-label">
+                    <label for=int1-title>Document Index</label>
+                </div>
+                <div class = "input-form-field">
+                    <input type="text" id="document1-index" name="document1-index" placeholder="Pfx Index for Document">
+                </div>
+            </div>
+            <div class = "input-form-row">
+                <div class = "input-form-label">
+                    <label for=document1-title>Document Title</label>
+                </div>
+                <div class = "input-form-field">
+                    <input type="text" id="document1-title" name="document1-title" placeholder="document title, usually the filename">
+                </div>
+            </div>
+            <div class = "input-form-row">
+                <div class = "input-form-label">
+                    <label for=document1-notes>Document Review Notes</label>
+                </div>
+                <div class = "input-form-field">
+                    <textarea id="document1-notes" name="int1-notes1" placeholder="Document review notes, separated by &&"></textarea>
+                </div>
+            </div>
+            <div class = "input-form-row">
+                <div class = "input-form-label">
+                    <label for=observation-1>Observation</label>
+                </div>
+                <div class = "input-form-field">
+                    <input type="text" id="observation-1" name="observation-1" placeholder="What did you observe?">
+                </div>
+            </div>
+            <div class = "input-form-row">
+                <div class = "input-form-label">
+                    <label for=observation1-notes>Observation Notes</label>
+                </div>
+                <div class = "input-form-field">
+                    <textarea id="observation1-notes" name="observation1-notes" placeholder="Observation notes, separated by &&"></textarea>
+                </div>
+            </div>
+            
+            <div><input type="submit" value="Submit"></div>
+        </div>
+    </div>
+</body>
+<footer>
+
+
+</footer>
+</html>
