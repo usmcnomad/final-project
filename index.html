@@ -41,8 +41,8 @@
             <div>
                 <p>Column 3 - - - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur voluptates esse expedita modi quo atque nostrum quae architecto animi, magnam, consequuntur ea, quidem molestiae sint molestias facilis eum harum temporibus.</p>
             </div>
-            <div id="generated-writeup">
-                <p>Column 4 - - - - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur voluptates esse expedita modi quo atque nostrum quae architecto animi, magnam, consequuntur ea, quidem molestiae sint molestias facilis eum harum temporibus.</p>
+            <div id="completeWriteUp">
+                
             </div>
         </div>
         <div id= "input-form" class = "input-form">
@@ -91,7 +91,7 @@
                     <label for=document1-notes>Document Review Notes</label>
                 </div>
                 <div class = "input-form-field">
-                    <textarea id="document1-notes" name="int1-notes1" placeholder="Document review notes, separated by &&"></textarea>
+                    <textarea id="document1-notes" name="document1-notes" placeholder="Document review notes, separated by &&"></textarea>
                 </div>
             </div>
             <div class = "input-form-row">
@@ -111,9 +111,10 @@
                 </div>
             </div>
             
-            <div><input type="submit" value="Submit"></div>
+            <div><span><a onclick="writeUp()"><button id="generate">Submit</button></a></span></div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 <footer>
 

@@ -110,7 +110,7 @@ input[type=text], textarea {
     resize: vertical;
 }*/
 
-input[type=submit] {
+button {
     background-color: #0E3837;
     color: #F0F0F0;
     padding: 1vh;
