@@ -24,9 +24,9 @@ function closeDiv() {
 }
 
 //accept inputs and parse into necessary variables//
-function parseAssessmentInputs() {
+// function parseAssessmentInputs() {
 
-}
+// }
 
 //generate writeups from inputs//
 //hint: javascript classes to scale up; use this function to define the properties w/ each writeup as the object//
@@ -48,11 +48,11 @@ function writeUp() {
 
     function generateWriteUp() {
         let genWriteUp = "";
-        genWriteUp += "<p>Inquired of " + inquiredTitle1.value + " noting that: </p>";
+        genWriteUp += "<p>Inquired of the " + inquiredTitle1.value + " noting that: </p>";
         genWriteUp += "<ul><li>" + inquiredNotes1.value + "</li></ul>";
         genWriteUp += "<p>Inspected " + documentName1.value + " noting that</p>";
         genWriteUp += "<ul><li>" + documentNotes1.value + "</li></ul>";
-        genWriteUp += "<p>Inspected " + observationSubject1.value + " noting that</p>";
+        genWriteUp += "<p>Observed " + observationSubject1.value + " noting that</p>";
         genWriteUp += "<ul><li>" + observationNotes1.value + "</li></ul>";
 
         completeWriteUp.innerHTML = genWriteUp;
