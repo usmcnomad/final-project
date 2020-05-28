@@ -32,7 +32,6 @@ function parseAssessmentInputs() {
 //hint: javascript classes to scale up; use this function to define the properties w/ each writeup as the object//
 //hint: use indexof to search/find &&//
 function writeUp() {
-    console.log("called writeUp");
     let inquiredTitle1 = document.querySelector('#int1-title');
     let inquiredName1 = document.querySelector('#int1-name');
     let inquiredNotes1 = document.querySelector('#int1-notes'); 
@@ -48,7 +47,6 @@ function writeUp() {
     //launch.addEventListener("click", generateWriteup, false);
 
     function generateWriteUp() {
-        console.log("called generateWriteUp")
         let genWriteUp = "";
         genWriteUp += "<p>Inquired of " + inquiredTitle1.value + " noting that: </p>";
         genWriteUp += "<ul><li>" + inquiredNotes1.value + "</li></ul>";
@@ -60,8 +58,59 @@ function writeUp() {
         completeWriteUp.innerHTML = genWriteUp;
 
     }
-
     expandDiv();
-    console.log(completeWriteUp);
-    console.log(genWriteUp);
+}
+
+//need to update container to pull specific elementID from the div it's in
+//need to update the container.appendChild to createTextNode to generate name using "name" + (i+1)
+function addInquiryForm() {
+    let parentId = this.parentNode.Id;
+    let container = document.getElementById("");
+    container.appendChild(document.createTextNode(""));
+    let input = document.createElement("input");
+    input.type = "text";
+    input.name = "member" + i;
+    container.appendChild(input);
+}
+
+function addInspectForm() {
+    let container = document.getElementById("");
+    container.appendChild(document.createTextNode(""));
+    let input = document.createElement("input");
+    input.type = "text";
+    input.name = "member" + i;
+    container.appendChild(input);
+}
+
+function addObservationForm() {
+    let container = document.getElementById("");
+    container.appendChild(document.createTextNode(""));
+    let input = document.createElement("input");
+    input.type = "text";
+    input.name = "member" + i;
+    container.appendChild(input);
+}
+
+//constructor functions to allow write up forms to scale
+function inquiry(title, name, inquiryNotes) {
+    this.title = title;
+    this.name = name;
+    this.inquiryNotes = inquiryNotes; 
+}
+
+function inspect(index, filename, inspectionNotes) {
+    this.index = index;
+    this.filename = filename;
+    this.inspectionNotes = inspectionNotes;
+}
+
+function observation (subject, observationNotes) {
+    this.subject = subject; 
+    this.observationNotes = observationNotes;
+}
+
+//Updated writeup function to use constructor functions
+
+function newWriteUp() {
+
 }
